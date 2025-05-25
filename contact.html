@@ -11,10 +11,10 @@
 
   <!-- Header -->
   <header style="background:#2c3e50; color:white; display:flex; justify-content:space-between; align-items:center; padding:10px 20px;">
-    <div style="display: flex; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 10px;">
       <img src="image_1748067114103-removebg-preview.png" style="height: 60px; width: 60px; border-radius: 50%;" alt="logo">
+      <div style="font-size:22px; font-weight:bold;">MOMINUL ISLAM MIAD</div>
     </div>
-    <div style="font-size:22px; font-weight:bold;">MOMINUL ISLAM MIAD</div>
     <nav>
       <ul style="list-style:none; display:flex; gap:15px; margin:0; padding:0;">
         <li><a href="index.html" style="color:white; text-decoration:none;">Home</a></li>
@@ -27,16 +27,22 @@
   <!-- কন্টাক্ট -->
   <section style="padding:40px 20px;">
     <h2 style="text-align:center;">Contact us</h2>
-    <form style="max-width:400px; margin:auto; background:#fdfdfd; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.05);" name="contact" netlify >
-      <input type="text" placeholder="Your name" required style="padding:10px; width:100%; margin-bottom:10px;"><br>
-      <input type="email" placeholder="Your email" required style="padding:10px; width:100%; margin-bottom:10px;"><br>
-      <textarea placeholder="Write message" required style="padding:10px; width:100%; height:100px;"></textarea><br><br>
+    <form name="contact" method="POST" data-netlify="true" style="max-width:400px; margin:auto; background:#fdfdfd; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.05);">
       
-        <button type="button" style="padding:10px 20px; background:#27ae60; border:none; color:white; border-radius:5px;">Send</button>
+      <!-- Hidden input for Netlify -->
+      <input type="hidden" name="form-name" value="contact">
+
+      <input type="text" name="name" placeholder="Your name" required style="padding:10px; width:100%; margin-bottom:10px;"><br>
+      <input type="email" name="email" placeholder="Your email" required style="padding:10px; width:100%; margin-bottom:10px;"><br>
+      <textarea name="message" placeholder="Write message" required style="padding:10px; width:100%; height:100px;"></textarea><br><br>
+
+      <button type="submit" style="padding:10px 20px; background:#27ae60; border:none; color:white; border-radius:5px;">Send</button>
+
       <br /><b>or</b><br />
+
       <a href="tel:+8801560019656">
-        <button type="button" style="padding:10px 20px; background:#27ae60; border:none; color:white; border-radius:5px;">Call me</button>
-      </a>
+        <button type="button" style="padding:10px 20px; background:#27ae60; border:none; color:white; border-radius:5px;">Call me ☎️</button>
+      </a><b>&</b><a href="mailto: mominulislam.miad@gmail.com"><button type="button" style="padding:10px 20px; background:#27ae60; border:none; color:white; border-radius:5px;">Mail 💌</button></a>
     </form>
   </section>
 </body>
