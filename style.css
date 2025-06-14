@@ -147,17 +147,6 @@ ul {
 /* -------------------------- */
 /* Contact Section            */
 /* -------------------------- */
-.about-body {
-  text-align: center;
-}
-
-.bio-section,
-.bio-container,
-.bio-item {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 .contact-section {
   padding: 40px 20px;
   text-align: center;
