@@ -2,40 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - Miad</title>
   <link rel="icon" type="image/png" href="logo.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="margin:0; font-family:sans-serif; background:white;">
-
+<!-- Adding a specific class to override body background if needed -->
+<body class="about-body">
   <!-- Header -->
-  <header style="background:#2c3e50; color:white; display:flex; justify-content:space-between; align-items:center; padding:10px 20px;">
-    <div style="display: flex; align-items: center; gap:10px;">
-      <img src="image_1748067114103-removebg-preview.png" style="height: 50px; width: 50px; border-radius: 50%;" alt="logo">
-      
-      <span style="font-size:20px; font-weight:bold;">MOMINUL ISLAM MIAD</span>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="image_1748067114103-removebg-preview.png" alt="logo" class="logo-img small">
+      <span class="site-title">MOMINUL ISLAM MIAD</span>
     </div>
     <nav>
-      <ul style="list-style:none; display:flex; gap:15px; margin:0; padding:0;">
-        <li><a href="index.html" style="color:white; text-decoration:none;">Home</a></li>
-        <li><a href="about.html" style="color:white; text-decoration:none;">About</a></li>
-        <li><a href="contact.html" style="color:white; text-decoration:none;">Contact</a></li>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact</a>
+        </li>
       </ul>
     </nav>
   </header>
 
-  <!-- এবাউট -->
-  <section style="padding:40px 20px;">
-    <h2 style="text-align:center;">About</h2>
-    <h3 style="text-align:center;">This website is about of myself. I'm a student and I'm trying to start web design journey.</h3>
-    <br\>
-    <div style="max-width:600px; margin:auto; text-align:center;">
-      <a href="https://www.facebook.com/mominulislam.miad" target="_blank" style="color:#2c3e50; text-decoration:none; font-size:18px; display:inline-flex; align-items:center; gap:8px;">
-        <i class="fab fa-facebook" style="font-size:22px;"></i> Facebook
-      </a><br><br>
-      <a href="https://www.instagram.com/mominul_islam._.miad" target="_blank" style="color:#2c3e50; text-decoration:none; font-size:18px; display:inline-flex; align-items:center; gap:8px;">
-        <i class="fab fa-instagram" style="font-size:22px;"></i> Instagram
+  <!-- About Section -->
+  <section class="about-section">
+    <h2 class="section-title">About</h2>
+    <h3 class="section-subtitle">
+      This website is about myself. I'm a student and I'm trying to start my web design journey.
+    </h3>
+    <div class="social-links">
+      <a href="https://www.facebook.com/mominulislam.miad" target="_blank" class="social-link">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://www.instagram.com/mominul_islam._.miad" target="_blank" class="social-link">
+        <i class="fab fa-instagram"></i> Instagram
       </a>
     </div>
   </section>
