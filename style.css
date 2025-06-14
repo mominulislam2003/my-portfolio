@@ -86,6 +86,7 @@ ul {
 .nav-item a {
   font-size: 16px;
   text-decoration: none;
+  align-item: center;
 }
 
 /* -------------------------- */
