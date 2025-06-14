@@ -2,66 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Miad</title>
   <link rel="icon" type="image/png" href="logo.png">
+  <!-- Link to Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-  <style>
-    .hover-animate {
-      transition: transform 0.2s ease;
-    }
-    .hover-animate:hover {
-      transform: scale(1.05);
-    }
-  </style>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="contact.css">
 </head>
-<body style="margin:0; font-family:sans-serif; background:white;">
-
+<body>
   <!-- Header -->
-  <header style="background:#2c3e50; color:white; display:flex; justify-content:space-between; align-items:center; padding:10px 20px;">
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="image_1748067114103-removebg-preview.png" style="height: 60px; width: 60px; border-radius: 50%;" alt="logo">
-      <div style="font-size:22px; font-weight:bold;">MOMINUL ISLAM MIAD</div>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="image_1748067114103-removebg-preview.png" alt="logo" class="logo-img">
+      <div class="site-title">MOMINUL ISLAM MIAD</div>
     </div>
     <nav>
-      <ul style="list-style:none; display:flex; gap:15px; margin:0; padding:0;">
-        <li><a href="index.html" style="color:white; text-decoration:none;">Home</a></li>
-        <li><a href="about.html" style="color:white; text-decoration:none;">About</a></li>
-        <li><a href="contact.html" style="color:white; text-decoration:none;">Contact</a></li>
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Contact Section -->
-  <section style="padding:40px 20px;">
-    <h2 style="text-align:center;">Contact me</h2>
-    <form name="contact" method="POST" data-netlify="true" style="max-width:400px; margin:auto; background:#fdfdfd; padding:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.05);">
-      
+  <section class="contact-section">
+    <h2 class="section-title">Contact me</h2>
+    <form name="contact" method="POST" data-netlify="true" class="contact-form">
       <input type="hidden" name="form-name" value="contact">
-
-      <input type="text" name="name" placeholder="Your name" required style="padding:10px; width:100%; margin-bottom:10px;"><br>
-      <input type="email" name="email" placeholder="Your email" required style="padding:10px; width:100%; margin-bottom:10px;"><br>
-      <textarea name="message" placeholder="Write message" required style="padding:10px; width:100%; height:100px;"></textarea><br><br>
-
-      <!-- Send Button -->
-      <button type="submit" class="hover-animate" style="display:block; margin:0 auto; padding:10px 20px; background:#27ae60; border:none; color:white; border-radius:5px; font-size:16px; cursor:pointer;">
-       📨 Send
-      </button>
+      <input type="text" name="name" placeholder="Your name" required class="form-input">
+      <input type="email" name="email" placeholder="Your email" required class="form-input">
+      <textarea name="message" placeholder="Write message" required class="form-textarea"></textarea>
+      <button type="submit" class="hover-animate form-button">📨 Send</button>
 
       <!-- OR + Phone/Email -->
-      <div style="text-align:center; margin-top:20px;">
-        <p style="margin:10px 0; font-size:14px; color:#333;">or</p>
-
-        <a href="tel:+8801560019656" style="text-decoration:none;">
-          <button type="button" class="hover-animate" style="padding:10px 20px; background:#2980b9; border:none; color:white; border-radius:5px; font-size:16px; cursor:pointer; margin:5px;">
-            📞 Call
-          </button>
+      <div class="alternate-contact">
+        <p class="or-text">or</p>
+        <a href="tel:+8801560019656" class="contact-link">
+          <button type="button" class="hover-animate contact-button phone">📞 Call</button>
         </a>
-
-        <a href="mailto:mominulislam.miad@gmail.com" style="text-decoration:none;">
-          <button type="button" class="hover-animate" style="padding:10px 20px; background:#e74c3c; border:none; color:white; border-radius:5px; font-size:16px; cursor:pointer; margin:5px;">
-           📧 Mail
-          </button>
+        <a href="mailto:mominulislam.miad@gmail.com" class="contact-link">
+          <button type="button" class="hover-animate contact-button mail">📧 Mail</button>
         </a>
       </div>
     </form>
